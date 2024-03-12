@@ -10,7 +10,7 @@ public class MiPlugin extends JavaPlugin{
 	PluginDescriptionFile pdFile = getDescription();
 	
 	public String version = pdFile.getVersion();
-	public String nombre = ChatColor.YELLOW+"["+ChatColor.BLUE+pdFile.getName()+ChatColor.YELLOW+"]";
+	public String nombre = pdFile.getName();
 
 	public static void main(String[] args) {
 
@@ -18,13 +18,13 @@ public class MiPlugin extends JavaPlugin{
 	
 	public void onEnable() {
 		Bukkit.getConsoleSender().sendMessage(
-				ChatColor.DARK_PURPLE+"El Plugin "+nombre+ChatColor.WHITE+" ha sido activado (version: "+ChatColor.RED+version+ChatColor.WHITE+")"
+				ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "Plugin " + ChatColor.RESET  + nombre + ChatColor.GREEN + " Online " + ChatColor.WHITE + "(version: " + ChatColor.GOLD + version + ChatColor.WHITE + ")"
 		);
 	}
 	
 	public void onDisable() {
 		Bukkit.getConsoleSender().sendMessage(
-				ChatColor.DARK_PURPLE+"El Plugin "+nombre+ChatColor.WHITE+" ha sido desactivado (version: "+ChatColor.RED+version+ChatColor.WHITE+")"
+				ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "Plugin " + ChatColor.RESET  + nombre + ChatColor.DARK_RED + " Offline " + ChatColor.WHITE + "(version: " + ChatColor.GOLD + version + ChatColor.WHITE + ")"
 		);
 	}
 }
