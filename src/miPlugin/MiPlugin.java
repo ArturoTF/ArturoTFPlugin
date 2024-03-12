@@ -1,4 +1,4 @@
-package arturoTF.miplugin;
+package miPlugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
