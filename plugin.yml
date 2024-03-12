@@ -1,3 +1,7 @@
-main: miPlugin.MiPlugin 
+main: arturoTF.miPlugin.MiPlugin 
 version: 1.0.0
 name: MiPlugin
+
+commands: 
+  youtube:
+    description: El comando Youtube de MiPlugin
